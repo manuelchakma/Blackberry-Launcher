@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BlackBerry Launcher</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<div class="bb-frame">
+  <div class="status-bar">
+    <span>📶</span><span>4G</span><span>🔋82%</span><span id="time"></span>
+  </div>
+
+  <div class="app-grid" id="appGrid">
+    <div class="app" onclick="openApp('tel:')"><img src="icons/phone.png"><p>Phone</p></div>
+    <div class="app" onclick="openApp('sms:')"><img src="icons/messages.png"><p>Messages</p></div>
+    <div class="app" onclick="openApp('https://www.google.com')"><img src="icons/browser.png"><p>Browser</p></div>
+    <div class="app" onclick="openApp('mailto:')"><img src="icons/mail.png"><p>Email</p></div>
+    <div class="app" onclick="openApp('https://linkedin.com')"><img src="icons/linkedin.png"><p>LinkedIn</p></div>
+    <div class="app" onclick="openApp('https://twitter.com')"><img src="icons/twitter.png"><p>Twitter</p></div>
+  </div>
+
+  <div class="dock">
+    <div class="dock-app" onclick="openApp('tel:')"><img src="icons/phone.png"></div>
+    <div class="dock-app" onclick="openApp('sms:')"><img src="icons/messages.png"></div>
+    <div class="dock-app" onclick="openApp('camera:')"><img src="icons/camera.png"></div>
+  </div>
+
+  <div class="keyboard">
+    <div class="row">
+      <button onclick="pressKey('q')">q</button><button onclick="pressKey('w')">w</button><button onclick="pressKey('e')">e</button>
+      <button onclick="pressKey('r')">r</button><button onclick="pressKey('t')">t</button><button onclick="pressKey('y')">y</button>
+      <button onclick="pressKey('u')">u</button><button onclick="pressKey('i')">i</button><button onclick="pressKey('o')">o</button>
+      <button onclick="pressKey('p')">p</button>
+    </div>
+    <div class="row">
+      <button onclick="pressKey('a')">a</button><button onclick="pressKey('s')">s</button><button onclick="pressKey('d')">d</button>
+      <button onclick="pressKey('f')">f</button><button onclick="pressKey('g')">g</button><button onclick="pressKey('h')">h</button>
+      <button onclick="pressKey('j')">j</button><button onclick="pressKey('k')">k</button><button onclick="pressKey('l')">l</button>
+    </div>
+    <div class="row">
+      <button onclick="pressKey('alt')">alt</button><button onclick="pressKey('z')">z</button><button onclick="pressKey('x')">x</button>
+      <button onclick="pressKey('c')">c</button><button onclick="pressKey('v')">v</button><button onclick="pressKey('b')">b</button>
+      <button onclick="pressKey('n')">n</button><button onclick="pressKey('m')">m</button><button onclick="pressKey('back')">⌫</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
